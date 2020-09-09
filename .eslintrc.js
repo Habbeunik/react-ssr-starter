@@ -4,12 +4,7 @@ module.exports = {
 		es2021: true,
 		node: true
 	},
-	extends: [
-		'plugin:react/recommended',
-		'google',
-		'prettier',
-		'stylelint-config-prettier'
-	],
+	extends: ['plugin:react/recommended', 'google', 'prettier'],
 	parserOptions: {
 		ecmaFeatures: {
 			jsx: true
@@ -19,7 +14,7 @@ module.exports = {
 	},
 	plugins: ['react'],
 	rules: {
-		'prettier/prettier': 'warn',
-		'require-jsdoc': 0
+		'require-jsdoc': 0,
+		'react/react-in-jsx-scope': 0
 	}
 };
