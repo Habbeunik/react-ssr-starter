@@ -9,7 +9,10 @@
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook",
 		"lint": "./node_modules/.bin/eslint ./src",
-		"lint:fix": "./node_modules/.bin/eslint ./src --fix"
+		"lint:fix": "./node_modules/.bin/eslint ./src --fix",
+		"test": "jest --passWithNoTests",
+		"test:watch": "jest --watchAll",
+		"test:coverage": "jest --coverage"
 	},
 	"husky": {
 		"hooks": {
@@ -39,6 +42,7 @@
 		"eslint-config-prettier": "^6.11.0",
 		"eslint-plugin-react": "^7.20.6",
 		"husky": "^4.3.0",
+		"jest": "^26.4.2",
 		"prettier": "2.1.1",
 		"react-is": "^16.13.1",
 		"stylelint-config-prettier": "^8.0.2"
