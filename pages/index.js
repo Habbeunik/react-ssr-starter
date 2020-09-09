@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.scss';
+import Img from './vercel.svg';
 
 export default function Home() {
 	return (
@@ -10,6 +11,7 @@ export default function Home() {
 			</Head>
 
 			<main className={styles.main}>
+				<img src={Img} />
 				<h1 className={styles.title}>
 					Welcome to <a href='https://nextjs.org'>Next.js!</a>
 				</h1>
