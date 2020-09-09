@@ -1,0 +1,11 @@
+
+#ignore artifacts
+build
+node_modules
+
+#next
+.next
+/out/
+
+# vercel
+.vercel
